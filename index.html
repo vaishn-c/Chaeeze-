@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chaeeze — Your Friendly Companion</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Chaeeze</h1>
+      <p class="subtitle">A calm, friendly place to type — Chaeeze listens.</p>
+    </header>
+
+    <main id="chatWindow" class="chat-window" aria-live="polite"></main>
+
+    <form id="inputForm" class="input-area" onsubmit="return false;">
+      <textarea id="messageInput" placeholder="Type anything... (Chaeeze is listening)" rows="1" required></textarea>
+      <button id="sendBtn" type="submit">Send</button>
+    </form>
+
+    <footer class="footer">
+      <small>Built with ♥ — Chaeeze stores your conversation locally in your browser.</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
